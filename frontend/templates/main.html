@@ -1,0 +1,34 @@
+<section class="main">
+    <div class="container">
+        <h1 class="main-header">
+            Главная
+        </h1>
+
+        <div class="table">
+            <div class="table-filters">
+                <button class="filter-btn" id="today">Сегодня</button>
+                <button class="filter-btn" id="week">Неделя</button>
+                <button class="filter-btn" id="month">Месяц</button>
+                <button class="filter-btn" id="year">Год</button>
+                <button class="filter-btn" id="all">Все</button>
+                <button class="filter-btn" id="interval">Интервал</button>
+                <div class="table-filters-date">
+                    с
+                    <input type="date" class="filters-date-btn" id="dateFrom" placeholder="Дата">
+                    по
+                    <input type="date" class="filters-date-btn" id="dateTo" placeholder="Дата">
+                </div>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="canvas catIncomes" id="canvasIncomes">
+                <h1>Доход</h1>
+            </div>
+            <div class="line"></div>
+            <div class="canvas catExpenses" id="canvasExpense">
+                <h1>Расход</h1>
+            </div>
+        </div>
+    </div>
+</section>

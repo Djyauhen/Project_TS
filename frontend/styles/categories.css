@@ -1,0 +1,148 @@
+@import url("createCategory.css");
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 352px;
+    min-height: 121px;
+    border: 1px solid #CED4DA;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.category-item-name {
+    margin: 0 0 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #290661;
+}
+
+.category-item-action {
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.edit-category {
+    background: #0D6EFD;
+    margin-right: 10px;
+}
+
+.edit-category:hover {
+    background: #093983;
+}
+
+.delete-category, .action-disagree {
+    background: #DC3545;
+    color: white;
+}
+
+.delete-category:hover, .action-disagree:hover {
+    background: #96262f;
+    color: white;
+}
+
+.add-category-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    line-height: 33px;
+    color: #CED4DA;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.add-category-item:hover {
+    background: #fafafa;
+    border: 3px solid #CED4DA;
+    font-size: 34px;
+}
+
+
+.popup {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.popup-item {
+    padding: 40px;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #CED4DA;
+    border-radius: 12px;
+}
+
+.popup-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+    text-align: center;
+    color: #290661;
+    margin-bottom: 20px;
+}
+
+.popup-action {
+    display: flex;
+    justify-content: center;
+}
+
+.action-agree {
+    background: #198754;
+    margin-right: 12px;
+    color: white;
+}
+
+.action-agree:hover {
+    background: #115b39;
+    color: white;
+}
+
+.action-agree:disabled {
+    background: #6C757D;
+}
+
+.action-agree:disabled:hover {
+    cursor: not-allowed;
+}
+
+.create-input {
+    display: flex;
+    flex-direction: column;
+}

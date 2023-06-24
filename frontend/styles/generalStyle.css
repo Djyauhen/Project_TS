@@ -1,0 +1,31 @@
+@import url('sidebars.css');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+input {
+    outline: none;
+    color: black;
+}
+
+
+.main {
+    margin: 0 0 0 218px;
+    position: relative;
+    padding: 100px 65px 100px 60px;
+    max-width: 1221px;
+}
+
+.main-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 47px;
+    color: #052C65;
+    margin-bottom: 20px;
+}

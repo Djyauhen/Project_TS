@@ -1,0 +1,52 @@
+<section class="main">
+    <div class="container">
+        <h1 class="main-header">
+            Доходы и расходы
+        </h1>
+        <div class="category-item-action">
+            <button class="btn create-income" id="create-income">Создать доход</button>
+            <button class="btn create-expense" id="create-expense">Создать расход</button>
+        </div>
+        <div class="table">
+            <div class="table-filters">
+                <button class="filter-btn" id="today">Сегодня</button>
+                <button class="filter-btn" id="week">Неделя</button>
+                <button class="filter-btn" id="month">Месяц</button>
+                <button class="filter-btn" id="year">Год</button>
+                <button class="filter-btn" id="all">Все</button>
+                <button class="filter-btn" id="interval">Интервал</button>
+                <div class="table-filters-date">
+                    с
+                    <input type="date" class="filters-date-btn" id="dateFrom" placeholder="Дата">
+                    по
+                    <input type="date" class="filters-date-btn" id="dateTo" placeholder="Дата">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid" id="grid">
+            <div class="row table-head">
+                <div class="col num">№ операции</div>
+                <div class="col type">Тип</div>
+                <div class="col cat">Категория</div>
+                <div class="col sum">Сумма</div>
+                <div class="col date">Дата</div>
+                <div class="col comm">Комментарий</div>
+                <div class="col twoBtns"></div>
+            </div>
+            <div id="table"></div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-item">
+            <div class="popup-text">
+                Вы действительно хотите удалить операцию?
+            </div>
+            <div class="popup-action">
+                <button class="btn action-disagree" id="agree">Да, удалить</button>
+                <button class="btn action-agree" id="disagree">Не удалять</button>
+            </div>
+        </div>
+    </div>
+</section>
